@@ -339,7 +339,7 @@ DF_NN$Treatment <- as.numeric(as.character(DF_NN$Treatment))
 #sapply( DF_NN, as.numeric )
 #str(DF_NN)
 
-#Normalising the data for NN
+#Normalizing the data for NN
 
 for(i in 1:ncol(DF_NN)){
   DF_NN[,i] <- (DF_NN[,i]-min(DF_NN[,i]))/(max(DF_NN[,i])-min(DF_NN[,i]))
